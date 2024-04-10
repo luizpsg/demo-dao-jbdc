@@ -5,38 +5,38 @@ import java.io.Serializable;
 public class Department implements Serializable{
   
   private static final long serialVersionUID = 1L;
-  private Integer Id;
-  private String Name;
+  private Integer id;
+  private String name;
 
   public Department() {
   }
 
   public Department(Integer id, String name) {
-    setId(id);
-    setName(name);
+    setid(id);
+    setname(name);
   }
 
-  public Integer getId() {
-    return Id;
+  public Integer getid() {
+    return id;
   }
 
-  public void setId(Integer id) {
-    Id = id;
+  public void setid(Integer id) {
+    this.id = id;
   }
 
-  public String getName() {
-    return Name;
+  public String getname() {
+    return name;
   }
 
-  public void setName(String name) {
-    Name = name;
+  public void setname(String name) {
+    this.name = name;
   }
 
   @Override
   public int hashCode() {
     final int prime = 31;
     int result = 1;
-    result = prime * result + ((Id == null) ? 0 : Id.hashCode());
+    result = prime * result + ((id == null) ? 0 : id.hashCode());
     return result;
   }
 
@@ -49,16 +49,16 @@ public class Department implements Serializable{
     if (getClass() != obj.getClass())
       return false;
     Department other = (Department) obj;
-    if (Id == null) {
-      if (other.Id != null)
+    if (id == null) {
+      if (other.id != null)
         return false;
-    } else if (!Id.equals(other.Id))
+    } else if (!id.equals(other.id))
       return false;
     return true;
   }
 
   @Override
   public String toString() {
-    return "Department [Id=" + Id + ", Name=" + Name + "]";
+    return "Department [id=" + id + ", name=" + name + "]";
   }
 }
