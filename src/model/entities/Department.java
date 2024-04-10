@@ -12,23 +12,23 @@ public class Department implements Serializable{
   }
 
   public Department(Integer id, String name) {
-    setid(id);
-    setname(name);
+    setId(id);
+    setName(name);
   }
 
-  public Integer getid() {
+  public Integer getId() {
     return id;
   }
 
-  public void setid(Integer id) {
+  public void setId(Integer id) {
     this.id = id;
   }
 
-  public String getname() {
+  public String getName() {
     return name;
   }
 
-  public void setname(String name) {
+  public void setName(String name) {
     this.name = name;
   }
 
